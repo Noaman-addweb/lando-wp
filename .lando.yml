@@ -1,0 +1,16 @@
+name: wp-composer
+recipe: wordpress
+config:
+  php: '7.2'
+  via: nginx
+  webroot: wordpress
+events:
+  pre-start:
+    - composer install
+  database: mariadb
+  xdebug: false
+#config:
+#    database: config/my-custom.cnf
+#  php: php.ini
+#    server: config/server.conf
+#    vhosts: config/default.conf
