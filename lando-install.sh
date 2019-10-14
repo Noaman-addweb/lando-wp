@@ -14,7 +14,7 @@ if [ "$EUID" -ne 0 ]
   exit
 fi
 
-LAST_LINK=$(curl -I https://github.com/lando/lando/releases/latest | grep "Location" | tr -d '\r')
+LAST_LINK=$(curl -I https://github.com/lando/lando/releases | grep "Location" | tr -d '\r')
 LAST_LINK=${LAST_LINK:10}
 LAST_LINK="${LAST_LINK/tag/download}"
 VERSION=$(get_version $LAST_LINK)
