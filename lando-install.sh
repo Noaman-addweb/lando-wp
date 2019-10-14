@@ -26,4 +26,3 @@ echo -e "Checking if it can be updated\n"
     else
     echo -e "No Update Found!\n"
     fi
-fi
