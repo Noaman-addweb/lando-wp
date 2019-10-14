@@ -11,6 +11,6 @@ events:
   xdebug: false
 #config:
 #    database: config/my-custom.cnf
-#  php: php.ini
+# php: config/php.ini
 #    server: config/server.conf
 #    vhosts: config/default.conf
