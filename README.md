@@ -2,7 +2,7 @@
 
 Run Setup.sh file with below comman to install lando in ubuntu
 
-> sudo ./setup.sh
+>>> sudo ./setup.sh
 
 After that run below command to setup wordpress, run command inside clone folder
 
