@@ -7,6 +7,7 @@ if ls $HOME/Downloads/lando* 1> /dev/null 2>&1; then
 else
     echo -e "lando doesn't Exist  >>>>> Downloading \n"
     cd ~/Downloads && { curl -L -o $package_name https://github.com/lando/lando/releases/download/$latest/lando-$latest.deb; cd -; }
+fi
 
 if [ $(dpkg-query -W -f='${Status}' lando 2>/dev/null | grep -c "install ok installed") -eq 0 ];
 then
