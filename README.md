@@ -1,6 +1,6 @@
 # lando-wp
 
-Run Setup.sh file with below comman to install lando in ubuntu
+Run Setup.sh file with below command to install lando in ubuntu
 
 ---> sudo ./setup.sh
 
